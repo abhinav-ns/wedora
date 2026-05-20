@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-inter);
+  background: #F7F1EA;
+  color: #171717;
+
+  /*
+    Improves animation smoothness
+  */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /*
+    Prevents mobile stretching glitches
+  */
+
+  overscroll-behavior-x: none;
+}
+
+/* FADE IN ANIMATION */
+
+@keyframes fadeIn {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(6px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+/* HIDE SCROLLBAR */
+
+.no-scrollbar::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+.no-scrollbar {
+
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+
+}
+
+/* TYPOGRAPHY */
+
+.font-cormorant {
+
+  font-family: var(--font-cormorant);
+
+}
+
+/* LAYOUT HELPERS */
+
+.page-padding {
+
+  @apply px-[18px];
+
+}
+
+.section-spacing {
+
+  @apply mt-5;
+
+}
+
+.premium-section {
+
+  @apply px-[18px] mt-5;
+
+}
