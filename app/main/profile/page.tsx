@@ -211,7 +211,7 @@ export default function ProfilePage() {
                 "
               >
 
-                Varsha Sharma
+                Cruz
 
               </h2>
 
@@ -225,7 +225,7 @@ export default function ProfilePage() {
                 "
               >
 
-                Varsha & Rahul Wedding
+                Diya & Rahul Wedding
 
               </p>
 

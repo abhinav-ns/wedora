@@ -33,7 +33,6 @@ export const CATEGORIES = [
     id: "discover",
     title: "Discover",
     icon: Compass,
-    active: true,
   },
 
   {

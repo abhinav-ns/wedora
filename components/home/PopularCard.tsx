@@ -14,10 +14,12 @@ export default function PopularCard({
 
     <div
       className="
-        w-[48%]
-        h-[220px]
-
         relative
+
+        w-[calc((100%-12px)/2)]
+        min-w-[calc((100%-12px)/2)]
+
+        h-[230px]
 
         flex-shrink-0
         snap-start
@@ -25,6 +27,8 @@ export default function PopularCard({
         overflow-hidden
 
         rounded-[30px]
+
+        bg-[#EDE7DF]
       "
     >
 
@@ -41,10 +45,15 @@ export default function PopularCard({
           h-full
 
           object-cover
+
+          scale-[1.02]
+
+          transition-transform
+          duration-700
         "
       />
 
-      {/* OVERLAY */}
+      {/* CINEMATIC OVERLAY */}
 
       <div
         className="
@@ -52,11 +61,55 @@ export default function PopularCard({
           inset-0
 
           bg-gradient-to-t
-          from-black/65
-          via-black/5
+          from-black/70
+          via-black/10
           to-transparent
         "
       />
+
+      {/* TOP LABEL */}
+
+      <div
+        className="
+          absolute
+          top-4
+          left-4
+        "
+      >
+
+        <div
+          className="
+            px-[12px]
+            py-[7px]
+
+            rounded-full
+
+            bg-white/12
+            backdrop-blur-md
+
+            border
+            border-white/10
+          "
+        >
+
+          <p
+            className="
+              text-[10px]
+              uppercase
+
+              tracking-[0.18em]
+
+              text-white/90
+            "
+          >
+
+            Curated
+
+          </p>
+
+        </div>
+
+      </div>
 
       {/* TEXT */}
 
@@ -65,6 +118,7 @@ export default function PopularCard({
           absolute
           bottom-4
           left-4
+          right-4
         "
       >
 
@@ -72,10 +126,10 @@ export default function PopularCard({
           className="
             text-white
 
-            text-[1.2rem]
-            leading-[0.95]
+            text-[1.9rem]
+            leading-[0.9]
 
-            tracking-[-0.04em]
+            tracking-[-0.06em]
 
             font-semibold
           "
@@ -86,6 +140,22 @@ export default function PopularCard({
           {title2}
 
         </h3>
+
+        <p
+          className="
+            mt-[10px]
+
+            text-[11px]
+
+            text-white/70
+
+            leading-[1.4]
+          "
+        >
+
+          Inspired by your recent wedding exploration.
+
+        </p>
 
       </div>
 

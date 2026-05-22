@@ -2,8 +2,8 @@
 
 import { useMemo, useState } from "react"
 
-import PremiumCard from "../../shared/PremiumCard"
-import SectionHeader from "../../shared/SectionHeader"
+import PremiumCard from "../../shared/ui/PremiumCard"
+import SectionHeader from "../../shared/ui/SectionHeader"
 
 import {
   usePlanningStore,

@@ -2,8 +2,8 @@
 
 import { usePlanningStore } from "@/store/planningStore"
 
-import PremiumCard from "../../shared/PremiumCard"
-import SectionHeader from "../../shared/SectionHeader"
+import PremiumCard from "../../shared/ui/PremiumCard"
+import SectionHeader from "../../shared/ui/SectionHeader"
 
 import {
   planningStages,

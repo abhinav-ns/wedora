@@ -1,4 +1,4 @@
-import PremiumCard from "../../shared/PremiumCard"
+import PremiumCard from "../../shared/ui/PremiumCard"
 
 export default function FinalReviewEntry() {
 

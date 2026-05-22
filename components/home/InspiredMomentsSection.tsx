@@ -12,7 +12,7 @@ export default function InspiredMomentsSection() {
 
       {/* HEADER */}
 
-      <div className="px-[18px] flex items-center justify-between mb-5">
+      <div className="px-[18px] flex items-center justify-between mb-4">
 
         <div>
 
@@ -54,7 +54,7 @@ export default function InspiredMomentsSection() {
       <div
         className="
           flex
-          gap-[14px]
+          gap-[12px]
 
           overflow-x-auto
           no-scrollbar
@@ -71,12 +71,12 @@ export default function InspiredMomentsSection() {
             className="
               relative
 
-              min-w-[250px]
-              h-[330px]
+              min-w-[215px]
+              h-[255px]
 
               overflow-hidden
 
-              rounded-[28px]
+              rounded-[24px]
 
               border
               border-[#EFE4D8]
@@ -102,7 +102,7 @@ export default function InspiredMomentsSection() {
                 inset-0
 
                 bg-gradient-to-t
-                from-black/75
+                from-black/72
                 via-black/10
                 to-transparent
               "
@@ -116,8 +116,8 @@ export default function InspiredMomentsSection() {
                 inset-x-0
                 bottom-0
 
-                px-5
-                pb-5
+                px-4
+                pb-4
               "
             >
 
@@ -126,11 +126,11 @@ export default function InspiredMomentsSection() {
                   inline-flex
 
                   px-3
-                  py-[6px]
+                  py-[5px]
 
                   rounded-full
 
-                  text-[10px]
+                  text-[9px]
                   tracking-[0.12em]
                   uppercase
 
@@ -147,10 +147,10 @@ export default function InspiredMomentsSection() {
 
               <h3
                 className="
-                  mt-4
+                  mt-3
 
-                  text-[23px]
-                  leading-[1.1]
+                  text-[18px]
+                  leading-[1.08]
 
                   tracking-[-0.05em]
 
