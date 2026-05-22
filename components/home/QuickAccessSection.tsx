@@ -174,7 +174,7 @@ export default function QuickAccessSection() {
                     "
                   >
 
-                    {item.value}
+                    {item.title}
 
                   </p>
 
