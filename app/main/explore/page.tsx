@@ -10,9 +10,6 @@ import {
   Heart,
 } from "lucide-react";
 
-import BottomNavbar
-from "@/components/navigation/BottomNavbar";
-
 /* ======================================================
    CATEGORY PILLS
 ====================================================== */
@@ -785,12 +782,6 @@ export default function ExplorePage() {
         </div>
 
       </section>
-
-      {/* ======================================================
-          NAVBAR
-      ====================================================== */}
-
-      <BottomNavbar />
 
     </main>
 

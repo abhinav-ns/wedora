@@ -5,6 +5,8 @@ import {
   motion,
 } from "framer-motion";
 
+import HomeDiscoverFeed from "@/components/home/HomeDiscoverFeed";
+
 import CollectionBody from "@/components/collections/CollectionBody";
 
 interface Props {
@@ -50,9 +52,17 @@ export default function HomeDynamicBody({
         className="mt-5"
       >
 
-        <CollectionBody
-          activeCategory={activeCategory}
-        />
+        {activeCategory === "discover" ? (
+
+          <HomeDiscoverFeed />
+
+        ) : (
+
+          <CollectionBody
+            activeCategory={activeCategory}
+          />
+
+        )}
 
       </motion.section>
 

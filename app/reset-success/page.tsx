@@ -4,6 +4,8 @@ import Link from "next/link";
 
 import { Check } from "lucide-react";
 
+import { ROUTES } from "@/constants/routes";
+
 export default function ResetSuccessPage() {
 
   return (
@@ -72,7 +74,7 @@ export default function ResetSuccessPage() {
         </h1>
 
         <Link
-          href="/login"
+          href={ROUTES.auth.login}
           className="
             mt-10
 

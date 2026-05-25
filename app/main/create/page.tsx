@@ -9,8 +9,8 @@ import {
   Wand2,
 } from "lucide-react";
 
-import BottomNavbar
-from "@/components/navigation/BottomNavbar";
+import { ROUTES } from "@/constants/routes";
+
 
 const ITEMS = [
   {
@@ -181,7 +181,7 @@ export default function CreatePage() {
 
             <Link
               key={item.title}
-              href="/planning"
+              href={ROUTES.main.planning}
               className="
                 h-[88px]
 
@@ -254,8 +254,6 @@ export default function CreatePage() {
         })}
 
       </div>
-
-      <BottomNavbar />
 
     </main>
 

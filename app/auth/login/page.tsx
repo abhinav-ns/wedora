@@ -6,6 +6,8 @@ import { useState } from "react";
 
 import { supabase } from "@/lib/supabase";
 
+import { ROUTES } from "@/constants/routes";
+
 import AuthBackground from "@/components/auth/AuthBackground";
 import AuthInput from "@/components/auth/AuthInput";
 import AuthButton from "@/components/auth/AuthButton";
@@ -54,7 +56,7 @@ export default function LoginPage() {
 
       }
 
-      router.push("/main/home");
+      router.push(ROUTES.main.home);
 
     } catch {
 
@@ -153,7 +155,7 @@ export default function LoginPage() {
           <div className="flex justify-end mt-4">
 
             <Link
-              href="/forgot-password"
+              href={ROUTES.auth.forgotPassword}
               className="
                 text-[15px]
                 font-medium
@@ -197,7 +199,7 @@ export default function LoginPage() {
             </span>
 
             <Link
-              href="/signup"
+              href={ROUTES.auth.signup}
               className="
                 ml-2
                 font-semibold

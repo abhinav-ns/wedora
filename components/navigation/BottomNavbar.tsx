@@ -12,6 +12,8 @@ import {
   Plus,
 } from "lucide-react";
 
+import { ROUTES } from "@/constants/routes";
+
 export default function BottomNavbar() {
 
   const router = useRouter();
@@ -91,7 +93,7 @@ export default function BottomNavbar() {
 
           <motion.button
             whileTap={{ scale: 0.94 }}
-            onClick={() => navigate("/main/home")}
+            onClick={() => navigate(ROUTES.main.home)}
             className="
               flex
               flex-col
@@ -103,10 +105,10 @@ export default function BottomNavbar() {
 
             <motion.div
               animate={{
-                scale: isActive("/main/home")
+                scale: isActive(ROUTES.main.home)
                   ? 1.08
                   : 1,
-                y: isActive("/main/home")
+                y: isActive(ROUTES.main.home)
                   ? -1.5
                   : 0,
               }}
@@ -121,7 +123,7 @@ export default function BottomNavbar() {
                 size={22}
                 strokeWidth={2.1}
                 className={
-                  isActive("/main/home")
+                  isActive(ROUTES.main.home)
                     ? "text-[#C8A96B]"
                     : "text-[#7C6F66]"
                 }
@@ -131,7 +133,7 @@ export default function BottomNavbar() {
 
             <motion.span
               animate={{
-                opacity: isActive("/main/home")
+                opacity: isActive(ROUTES.main.home)
                   ? 1
                   : 0.82,
               }}
@@ -142,7 +144,7 @@ export default function BottomNavbar() {
                 text-[12px]
                 font-medium
                 ${
-                  isActive("/main/home")
+                  isActive(ROUTES.main.home)
                     ? "text-[#C8A96B]"
                     : "text-[#7C6F66]"
                 }
@@ -159,7 +161,7 @@ export default function BottomNavbar() {
 
           <motion.button
             whileTap={{ scale: 0.94 }}
-            onClick={() => navigate("/main/planning")}
+            onClick={() => navigate(ROUTES.main.planning)}
             className="
               flex
               flex-col
@@ -171,10 +173,10 @@ export default function BottomNavbar() {
 
             <motion.div
               animate={{
-                scale: isActive("/main/planning")
+                scale: isActive(ROUTES.main.planning)
                   ? 1.08
                   : 1,
-                y: isActive("/main/planning")
+                y: isActive(ROUTES.main.planning)
                   ? -1.5
                   : 0,
               }}
@@ -189,7 +191,7 @@ export default function BottomNavbar() {
                 size={22}
                 strokeWidth={2.1}
                 className={
-                  isActive("/main/planning")
+                  isActive(ROUTES.main.planning)
                     ? "text-[#C8A96B]"
                     : "text-[#7C6F66]"
                 }
@@ -199,7 +201,7 @@ export default function BottomNavbar() {
 
             <motion.span
               animate={{
-                opacity: isActive("/main/planning")
+                opacity: isActive(ROUTES.main.planning)
                   ? 1
                   : 0.82,
               }}
@@ -210,7 +212,7 @@ export default function BottomNavbar() {
                 text-[12px]
                 font-medium
                 ${
-                  isActive("/main/planning")
+                  isActive(ROUTES.main.planning)
                     ? "text-[#C8A96B]"
                     : "text-[#7C6F66]"
                 }
@@ -237,7 +239,7 @@ export default function BottomNavbar() {
               stiffness: 280,
               damping: 16,
             }}
-            onClick={() => navigate("/main/create")}
+            onClick={() => navigate(ROUTES.main.create)}
             className="
               w-[58px]
               h-[58px]
@@ -277,7 +279,7 @@ export default function BottomNavbar() {
 
           <motion.button
             whileTap={{ scale: 0.94 }}
-            onClick={() => navigate("/main/explore")}
+            onClick={() => navigate(ROUTES.main.explore)}
             className="
               flex
               flex-col
@@ -289,10 +291,10 @@ export default function BottomNavbar() {
 
             <motion.div
               animate={{
-                scale: isActive("/main/explore")
+                scale: isActive(ROUTES.main.explore)
                   ? 1.08
                   : 1,
-                y: isActive("/main/explore")
+                y: isActive(ROUTES.main.explore)
                   ? -1.5
                   : 0,
               }}
@@ -307,7 +309,7 @@ export default function BottomNavbar() {
                 size={22}
                 strokeWidth={2.1}
                 className={
-                  isActive("/main/explore")
+                  isActive(ROUTES.main.explore)
                     ? "text-[#C8A96B]"
                     : "text-[#7C6F66]"
                 }
@@ -317,7 +319,7 @@ export default function BottomNavbar() {
 
             <motion.span
               animate={{
-                opacity: isActive("/main/explore")
+                opacity: isActive(ROUTES.main.explore)
                   ? 1
                   : 0.82,
               }}
@@ -328,7 +330,7 @@ export default function BottomNavbar() {
                 text-[12px]
                 font-medium
                 ${
-                  isActive("/main/explore")
+                  isActive(ROUTES.main.explore)
                     ? "text-[#C8A96B]"
                     : "text-[#7C6F66]"
                 }
@@ -345,7 +347,7 @@ export default function BottomNavbar() {
 
           <motion.button
             whileTap={{ scale: 0.94 }}
-            onClick={() => navigate("/main/profile")}
+            onClick={() => navigate(ROUTES.main.profile)}
             className="
               flex
               flex-col
@@ -357,10 +359,10 @@ export default function BottomNavbar() {
 
             <motion.div
               animate={{
-                scale: isActive("/main/profile")
+                scale: isActive(ROUTES.main.profile)
                   ? 1.08
                   : 1,
-                y: isActive("/main/profile")
+                y: isActive(ROUTES.main.profile)
                   ? -1.5
                   : 0,
               }}
@@ -375,7 +377,7 @@ export default function BottomNavbar() {
                 size={22}
                 strokeWidth={2.1}
                 className={
-                  isActive("/main/profile")
+                  isActive(ROUTES.main.profile)
                     ? "text-[#C8A96B]"
                     : "text-[#7C6F66]"
                 }
@@ -385,7 +387,7 @@ export default function BottomNavbar() {
 
             <motion.span
               animate={{
-                opacity: isActive("/main/profile")
+                opacity: isActive(ROUTES.main.profile)
                   ? 1
                   : 0.82,
               }}
@@ -396,7 +398,7 @@ export default function BottomNavbar() {
                 text-[12px]
                 font-medium
                 ${
-                  isActive("/main/profile")
+                  isActive(ROUTES.main.profile)
                     ? "text-[#C8A96B]"
                     : "text-[#7C6F66]"
                 }

@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 
 import { supabase } from "@/lib/supabase";
 
+import { ROUTES } from "@/constants/routes";
+
 import AuthBackground from "@/components/auth/AuthBackground";
 import AuthInput from "@/components/auth/AuthInput";
 import AuthButton from "@/components/auth/AuthButton";
@@ -83,7 +85,7 @@ export default function SignupPage() {
 
       }
 
-      router.push("/login");
+      router.push(ROUTES.auth.login);
 
     } catch {
 
@@ -189,7 +191,7 @@ export default function SignupPage() {
           </span>
 
           <Link
-            href="/login"
+            href={ROUTES.auth.login}
             className="
               ml-2
               font-semibold

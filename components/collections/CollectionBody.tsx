@@ -10,18 +10,6 @@ import {
   COLLECTIONS_DATA,
 } from "@/constants/collectionsData";
 
-import TodaysFocusSection from "@/components/home/TodaysFocusSection";
-
-import PopularSection from "@/components/home/PopularSection";
-
-import WeddingPlanSection from "@/components/home/WeddingPlanSection";
-
-import InspiredMomentsSection from "@/components/home/InspiredMomentsSection";
-
-import QuickAccessSection from "@/components/home/QuickAccessSection";
-
-import HospitalitySection from "@/components/home/HospitalitySection";
-
 interface Props {
 
   activeCategory: string;
@@ -31,34 +19,6 @@ interface Props {
 export default function CollectionBody({
   activeCategory,
 }: Props) {
-
-  /* =========================
-     DISCOVER
-  ========================= */
-
-  if (activeCategory === "discover") {
-
-    return (
-
-      <>
-
-        <TodaysFocusSection />
-
-        <PopularSection />
-
-        <WeddingPlanSection />
-
-        <InspiredMomentsSection />
-
-        <QuickAccessSection />
-
-        <HospitalitySection />
-
-      </>
-
-    );
-
-  }
 
   /* =========================
      CATEGORY COLLECTIONS

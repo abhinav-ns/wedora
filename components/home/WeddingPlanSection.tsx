@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 
 import {
+  type LucideIcon,
   Wallet,
   Users,
   Building2,
@@ -21,7 +22,7 @@ import {
 type StepType = {
   id: string;
   title: string;
-  icon: any;
+  icon: LucideIcon;
   completed: boolean;
 };
 

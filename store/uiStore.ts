@@ -4,11 +4,11 @@ interface UIStore {
 
   activeSheet: string | null
 
-  sheetData: any
+  sheetData: unknown
 
   openSheet: (
     sheet: string,
-    data?: any
+    data?: unknown
   ) => void
 
   closeSheet: () => void

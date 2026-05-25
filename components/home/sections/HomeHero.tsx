@@ -15,6 +15,8 @@ import { Bell, Search } from "lucide-react";
 
 import { Cormorant_Garamond } from "next/font/google";
 
+import { ROUTES } from "@/constants/routes";
+
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -188,7 +190,7 @@ export default function HomeHero() {
 
           {/* NOTIFICATIONS */}
 
-          <Link href="/main/notifications">
+          <Link href={ROUTES.main.notifications}>
 
             <button
               className="
@@ -326,7 +328,7 @@ export default function HomeHero() {
         ========================= */}
 
         <Link
-          href="/main/home/search"
+          href={ROUTES.main.homeSearch}
           className="block"
         >
 

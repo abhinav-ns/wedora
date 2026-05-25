@@ -2,6 +2,8 @@
 
 import { useRouter } from "next/navigation";
 
+import { ROUTES } from "@/constants/routes";
+
 import AuthBackground from "@/components/auth/AuthBackground";
 import AuthButton from "@/components/auth/AuthButton";
 
@@ -11,7 +13,7 @@ export default function OtpVerificationPage() {
 
   const handleVerify = () => {
 
-    router.push("/");
+    router.push(ROUTES.main.home);
 
   };
 

@@ -1,34 +1,19 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
 import CollectionFilters from "@/components/collections/CollectionFilters";
 
-import FeaturedCollectionCard from "@/components/collections/FeaturedCollectionCard";
-
-import CollectionPromptCard from "@/components/collections/CollectionPromptCard";
-
-import VendorListSection from "@/components/collections/ExperienceFeedSection";
+import CollectionBody from "@/components/collections/CollectionBody";
 
 import {
   FILTERS,
-  COLLECTIONS_DATA,
 } from "@/constants/collectionsData";
 
 export default function CollectionsPage() {
 
-  const [activeTab, setActiveTab] =
+  const [activeTab] =
     useState("Catering");
-
-  const activeCollection = useMemo(() => {
-
-    return (
-      COLLECTIONS_DATA[
-        activeTab as keyof typeof COLLECTIONS_DATA
-      ] || COLLECTIONS_DATA.Catering
-    );
-
-  }, [activeTab]);
 
   return (
 
@@ -84,56 +69,13 @@ export default function CollectionsPage() {
 
         </section>
 
-        {/* FEATURED */}
+        <div className="mt-5">
 
-        <section className="px-[18px] mt-5">
-
-          <FeaturedCollectionCard
-            image={
-              activeCollection.featured.image
-            }
-            title1={
-              activeCollection.featured.title1
-            }
-            title2={
-              activeCollection.featured.title2
-            }
-            label={
-              activeCollection.featured.label
-            }
+          <CollectionBody
+            activeCategory={activeTab}
           />
 
-        </section>
-
-        {/* PROMPT */}
-
-        <section className="px-[18px] mt-5">
-
-          <CollectionPromptCard
-            label={
-              activeCollection.prompt.label
-            }
-            title={
-              activeCollection.prompt.title
-            }
-            options={
-              activeCollection.prompt.options
-            }
-          />
-
-        </section>
-
-        {/* VENDORS */}
-
-        <section className="px-[18px] mt-6">
-
-          <VendorListSection
-            vendors={
-              activeCollection.vendors
-            }
-          />
-
-        </section>
+        </div>
 
       </div>
 

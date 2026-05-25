@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+import { ROUTES } from "@/constants/routes";
+
 import AuthBackground from "@/components/auth/AuthBackground";
 import AuthInput from "@/components/auth/AuthInput";
 import AuthButton from "@/components/auth/AuthButton";
@@ -18,7 +20,7 @@ export default function ForgotPasswordPage() {
 
     if (!email) return;
 
-    router.push("/otp-verification");
+    router.push(ROUTES.auth.otpVerification);
 
   };
 
@@ -97,7 +99,7 @@ export default function ForgotPasswordPage() {
         <div className="mt-7 text-center">
 
           <Link
-            href="/login"
+            href={ROUTES.auth.login}
             className="
               text-[15px]
               font-medium

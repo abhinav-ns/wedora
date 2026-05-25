@@ -4,6 +4,8 @@ import Image from "next/image";
 
 import Link from "next/link";
 
+import { ROUTES } from "@/constants/routes";
+
 interface Props {
 
   id: number;
@@ -35,7 +37,7 @@ export default function ConversationCard({
   return (
 
     <Link
-      href={`/main/messages/${id}`}
+      href={ROUTES.main.messageDetail(id)}
       className="block"
     >
 

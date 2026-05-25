@@ -13,8 +13,7 @@ import {
   UserCircle2,
 } from "lucide-react";
 
-import BottomNavbar
-from "@/components/navigation/BottomNavbar";
+import { ROUTES } from "@/constants/routes";
 
 const QUICK_ACTIONS = [
 
@@ -107,7 +106,7 @@ export default function ProfilePage() {
         </div>
 
         <Link
-          href="/profile/settings"
+          href={ROUTES.main.profileSettings}
           className="
             w-[48px]
             h-[48px]
@@ -672,8 +671,6 @@ export default function ProfilePage() {
         )}
 
       </div>
-
-      <BottomNavbar />
 
     </main>
 

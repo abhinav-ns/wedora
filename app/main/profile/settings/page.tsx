@@ -15,6 +15,8 @@ import {
   User,
 } from "lucide-react";
 
+import { ROUTES } from "@/constants/routes";
+
 const SETTINGS = [
 
   {
@@ -92,7 +94,7 @@ export default function SettingsPage() {
       >
 
         <Link
-          href="/profile"
+          href={ROUTES.main.profile}
           className="
             w-[46px]
             h-[46px]
