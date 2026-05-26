@@ -1,4 +1,7 @@
-import type { Metadata, Viewport } from "next";
+import type {
+  Metadata,
+  Viewport,
+} from "next";
 
 import {
   Inter,
@@ -20,13 +23,38 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: "Wedora",
-  description: "Smart Wedding Experience Ecosystem",
+
+  description:
+    "Smart Wedding Experience Ecosystem",
+
+  manifest: "/manifest.json",
+
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Wedora",
+  },
+
+  formatDetection: {
+    telephone: false,
+  },
+
+  icons: {
+    apple: "/icons/icon-192.png",
+  },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
+
   initialScale: 1,
+
+  maximumScale: 1,
+
+  userScalable: false,
+
   viewportFit: "cover",
+
   themeColor: "#FAF7F2",
 };
 
@@ -35,30 +63,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
-
-    <html lang="en">
-
+    <html
+      lang="en"
+      suppressHydrationWarning
+    >
       <body
         className={`
           ${inter.variable}
           ${cormorant.variable}
 
+          overflow-hidden
           bg-[#FAF7F2]
           text-[#111111]
-
           antialiased
-          overflow-x-hidden
+          overscroll-none
         `}
       >
-
         {children}
-
       </body>
-
     </html>
-
   );
-
 }
