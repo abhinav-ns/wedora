@@ -42,7 +42,7 @@ export default function PlanningPage() {
         </div>
 
         {/* CONTENT */}
-        <div className="mt-1">
+        <div className="mt-4">
           <PlanningContent activeTab={activeTab} />
         </div>
       </div>
